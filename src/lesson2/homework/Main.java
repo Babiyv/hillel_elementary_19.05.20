@@ -37,7 +37,7 @@ public class Main {
             System.out.println(car);
         }
 
-        System.out.println("\n Compared by power and price:");
+        System.out.println("\n Compared by price and power:");
         Collections.sort(carArrayList, new CompareByPrice().thenComparing(new CompareByPower())); // - сортировка по мощности и затем по цене, сам нашел;
         for (Car car : carArrayList) {
             System.out.println(car);
